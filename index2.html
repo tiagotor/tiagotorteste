@@ -746,19 +746,19 @@
         Detalhes(2, new google.maps.LatLng(position.coords.latitude, position.coords.longitude))
     }
 
-    function carregando(b){
-        if(b){
-            $('#dvLstMap').loadingOverlay({
-                iconClass: 'fa fa-spinner fa-spin',        // Class added to loading overlay spinner
-                loadingText: 'aguarde'            // Text within loading overlay
-            });
-        }else{
-            $('#dvLstMap').loadingOverlay('remove', {
-                iconClass: 'fa fa-spinner fa-spin',        // Class added to loading overlay spinner
-                loadingText: 'aguarde'            // Text within loading overlay
-            });
-        }
-    }
+    // function carregando(b){
+    //     if(b){
+    //         $('#dvLstMap').loadingOverlay({
+    //             iconClass: 'fa fa-spinner fa-spin',        // Class added to loading overlay spinner
+    //             loadingText: 'aguarde'            // Text within loading overlay
+    //         });
+    //     }else{
+    //         $('#dvLstMap').loadingOverlay('remove', {
+    //             iconClass: 'fa fa-spinner fa-spin',        // Class added to loading overlay spinner
+    //             loadingText: 'aguarde'            // Text within loading overlay
+    //         });
+    //     }
+    // }
 
     function load() {
         carregando(true);
