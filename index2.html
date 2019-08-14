@@ -1018,40 +1018,40 @@
         return hashParams;
     }
 
-    // function checkHash()
-    // {
-    //     var params = getHashParams();
+    function checkHash()
+    {
+        var params = getHashParams();
 
-    //     if (params.atribuicao)
-    //     {
-    //         $('#hidCdAtribuicao').val(params.atribuicao.split('-')[0]);
-    //         $('#atuacao-promotoria').val(params.atribuicao.split('-')[0]);
-    //     }
+        if (params.atribuicao)
+        {
+            $('#hidCdAtribuicao').val(params.atribuicao.split('-')[0]);
+            $('#atuacao-promotoria').val(params.atribuicao.split('-')[0]);
+        }
 
-    //     if (params.promotoria)
-    //     {
-    //         $('#hidCdPromotoria').val(params.atribuicao.split('-')[0]);
-    //         $('#promotoria').val(params.atribuicao.split('-')[0]);
-    //     }
+        if (params.promotoria)
+        {
+            $('#hidCdPromotoria').val(params.atribuicao.split('-')[0]);
+            $('#promotoria').val(params.atribuicao.split('-')[0]);
+        }
 
-    //     if (params.municipio)
-    //     {
-    //         $('#hidCdCidade').val(params.municipio.split('-')[0]);
-    //         $("#cidade-promotoria option:contains(" + params.municipio.split('-')[1] + ")").attr('selected', true);
-    //         //$('#cidade-promotoria').val(params.municipio.split('-')[0]);
-    //     }
+        if (params.municipio)
+        {
+            $('#hidCdCidade').val(params.municipio.split('-')[0]);
+            $("#cidade-promotoria option:contains(" + params.municipio.split('-')[1] + ")").attr('selected', true);
+            //$('#cidade-promotoria').val(params.municipio.split('-')[0]);
+        }
 
-    //     if (params.promotor)
-    //     {
-    //         $('#hidCdPromotor').val(params.promotor.split('-')[0]);
-    //         $('#promotor-promotoria').val(params.promotor.split('-')[0]);
-    //     }
+        if (params.promotor)
+        {
+            $('#hidCdPromotor').val(params.promotor.split('-')[0]);
+            $('#promotor-promotoria').val(params.promotor.split('-')[0]);
+        }
 
-    //     if (params.atribuicao || params.municipio || params.promotor) {
-    //         LoadMarkers();
-    //         window.location.hash = '';
-    //     }
-    // }
+        if (params.atribuicao || params.municipio || params.promotor) {
+            LoadMarkers();
+            window.location.hash = '';
+        }
+    }
 
     var topDistance = 0;
     $(document).ready(function () {
