@@ -760,34 +760,34 @@
     //     }
     // }
 
-    function load() {
-        carregando(true);
+    // function load() {
+    //     carregando(true);
 
-        var myOptions = {
-            zoom: 6,
-            center: new google.maps.LatLng(-27.392, -51.080),
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
+    //     var myOptions = {
+    //         zoom: 6,
+    //         center: new google.maps.LatLng(-27.392, -51.080),
+    //         mapTypeId: google.maps.MapTypeId.ROADMAP
+    //     }
 
 
 
-        var divMap = document.getElementById('map');
-        map = new google.maps.Map(divMap, myOptions);
-        mgr = new MarkerManager(map);
+    //     var divMap = document.getElementById('map');
+    //     map = new google.maps.Map(divMap, myOptions);
+    //     mgr = new MarkerManager(map);
 
-        $('#mapCont').css({ 'height': '490px'});
-        $('#map').css({ 'height' : '490px' });
+    //     $('#mapCont').css({ 'height': '490px'});
+    //     $('#map').css({ 'height' : '490px' });
 
-        google.maps.event.addListenerOnce(map, 'idle', function(){
-            // do something only the first time the map is loaded
+    //     google.maps.event.addListenerOnce(map, 'idle', function(){
+    //         // do something only the first time the map is loaded
 
-            setTimeout(function(){ loadCidades(); }, 1000);
-        });
+    //         setTimeout(function(){ loadCidades(); }, 1000);
+    //     });
 
-        google.maps.event.addListener(map, 'bounds_changed', function () {
-            PreencherLista();
-        });
-    }
+    //     google.maps.event.addListener(map, 'bounds_changed', function () {
+    //         PreencherLista();
+    //     });
+    // }
 
 
     var exec = false;
