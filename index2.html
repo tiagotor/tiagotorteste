@@ -28,7 +28,7 @@
     <link href="/Content/css/themes.css?modified=20170215125120" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/Areas/portal/Content/css/portal_novo.css">
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/Areas/portal/Content/img/favicon_portal.ico">
+    <!-- <link rel="shortcut icon" href="/Areas/portal/Content/img/favicon_portal.ico">
 
     <link rel="stylesheet" type="text/css" href="/Areas/portal/Content/css/plugins/share/github-markdown.css" />
     <link href="/Areas/portal/Content/css/plugins/share/jquery.floating-share.css?modified=20170215125109" rel="stylesheet" type="text/css">
@@ -42,7 +42,7 @@
     @import url(/Content/css/plugins/datepicker/datepicker.css?modified=20170215125120);
     @import url(/Content/css/plugins/select2/select2.css?modified=20170215125122);
     @import url(/Content/css/plugins/chosen/chosen.css?modified=20170215125120);
-    </style>
+    </style> -->
 
     <!-- font-awesome-4.1.0 -->
     <!-- <link href="/Content/font-awesome-4.1.0/css/font-awesome.css?modified=20170222071819" rel="stylesheet" type="text/css">
@@ -1053,63 +1053,63 @@
     //     }
     // }
 
-    // var topDistance = 0;
-    // $(document).ready(function () {
+    var topDistance = 0;
+    $(document).ready(function () {
 
 
 
-    //     if (isMobile)
-    //     {
-    //         $('#filtros select').css({ 'width': '100%' });
-    //     }
+        if (isMobile)
+        {
+            $('#filtros select').css({ 'width': '100%' });
+        }
 
 
-    //     if (!isMobile || !isHome || isApp)
-    //     {
-    //         $('#dvLstMap').show();
-    //         load();
-    //         $('#btnBuscar').hide();
-    //     }
-    //     else
-    //     {
-    //         $('#dvLstMap').hide();
-    //         $('#btnBuscar').show();
-    //     }
+        if (!isMobile || !isHome || isApp)
+        {
+            $('#dvLstMap').show();
+            load();
+            $('#btnBuscar').hide();
+        }
+        else
+        {
+            $('#dvLstMap').hide();
+            $('#btnBuscar').show();
+        }
 
-    //     if (isHome)
-    //         $('#fixWidth').prop('class', 'span12');
-    //     else
-    //         $('#fixWidth').prop('class', 'span9');
-
-
-    //     if(hideMunicipio)
-    //     {
-    //         $('#cidade-promotoria').hide();
-    //         $('#btnMinhaLocalizacao').hide();
-    //     }
-    //     if(hideAtribuicao)
-    //     {
-    //         $('#atuacao-promotoria').hide();
-    //     }
-    //     if(hidePromotor)
-    //     {
-    //         $('#promotor-promotoria').hide();
-    //     }
-    //     if(hideMunicipio && hideAtribuicao && hidePromotor)
-    //     {
-    //         $('#limpar-filtros').hide();
-    //         $('#ajuda-filtros').hide();
-
-    //     }
+        if (isHome)
+            $('#fixWidth').prop('class', 'span12');
+        else
+            $('#fixWidth').prop('class', 'span9');
 
 
+        if(hideMunicipio)
+        {
+            $('#cidade-promotoria').hide();
+            $('#btnMinhaLocalizacao').hide();
+        }
+        if(hideAtribuicao)
+        {
+            $('#atuacao-promotoria').hide();
+        }
+        if(hidePromotor)
+        {
+            $('#promotor-promotoria').hide();
+        }
+        if(hideMunicipio && hideAtribuicao && hidePromotor)
+        {
+            $('#limpar-filtros').hide();
+            $('#ajuda-filtros').hide();
+
+        }
 
 
 
-    //     getLocation();
 
-    //     window.setTimeout('checkHash()', 1000);
-    // });
+
+        getLocation();
+
+        window.setTimeout('checkHash()', 1000);
+    });
 
     function buscar()
     {
