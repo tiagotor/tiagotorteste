@@ -1053,63 +1053,63 @@
     //     }
     // }
 
-    var topDistance = 0;
-    $(document).ready(function () {
+    // var topDistance = 0;
+    // $(document).ready(function () {
 
 
 
-        if (isMobile)
-        {
-            $('#filtros select').css({ 'width': '100%' });
-        }
+    //     if (isMobile)
+    //     {
+    //         $('#filtros select').css({ 'width': '100%' });
+    //     }
 
 
-        if (!isMobile || !isHome || isApp)
-        {
-            $('#dvLstMap').show();
-            load();
-            $('#btnBuscar').hide();
-        }
-        else
-        {
-            $('#dvLstMap').hide();
-            $('#btnBuscar').show();
-        }
+    //     if (!isMobile || !isHome || isApp)
+    //     {
+    //         $('#dvLstMap').show();
+    //         load();
+    //         $('#btnBuscar').hide();
+    //     }
+    //     else
+    //     {
+    //         $('#dvLstMap').hide();
+    //         $('#btnBuscar').show();
+    //     }
 
-        if (isHome)
-            $('#fixWidth').prop('class', 'span12');
-        else
-            $('#fixWidth').prop('class', 'span9');
-
-
-        if(hideMunicipio)
-        {
-            $('#cidade-promotoria').hide();
-            $('#btnMinhaLocalizacao').hide();
-        }
-        if(hideAtribuicao)
-        {
-            $('#atuacao-promotoria').hide();
-        }
-        if(hidePromotor)
-        {
-            $('#promotor-promotoria').hide();
-        }
-        if(hideMunicipio && hideAtribuicao && hidePromotor)
-        {
-            $('#limpar-filtros').hide();
-            $('#ajuda-filtros').hide();
-
-        }
+    //     if (isHome)
+    //         $('#fixWidth').prop('class', 'span12');
+    //     else
+    //         $('#fixWidth').prop('class', 'span9');
 
 
+    //     if(hideMunicipio)
+    //     {
+    //         $('#cidade-promotoria').hide();
+    //         $('#btnMinhaLocalizacao').hide();
+    //     }
+    //     if(hideAtribuicao)
+    //     {
+    //         $('#atuacao-promotoria').hide();
+    //     }
+    //     if(hidePromotor)
+    //     {
+    //         $('#promotor-promotoria').hide();
+    //     }
+    //     if(hideMunicipio && hideAtribuicao && hidePromotor)
+    //     {
+    //         $('#limpar-filtros').hide();
+    //         $('#ajuda-filtros').hide();
+
+    //     }
 
 
 
-        getLocation();
 
-        window.setTimeout('checkHash()', 1000);
-    });
+
+    //     getLocation();
+
+    //     window.setTimeout('checkHash()', 1000);
+    // });
 
     function buscar()
     {
