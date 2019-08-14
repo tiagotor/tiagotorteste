@@ -318,11 +318,11 @@
     <div id="main">
 
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     $(document).ready(function () {
         $.post("/portal/Home/NovaVisita", { m: 'Ob7DWk8pQmElZY%2FbfeLCNg%3D%3D' });
     });
-</script>
+</script> -->
 
 <div class="row-fluid">
 
@@ -1136,26 +1136,26 @@
 
     }
 
-    function loadCidades()
-    {
-        $.getJSON("/portal/EncontreUmaPJ/PesquisarCidades", function (result) {
-            var options = $("#cidade-promotoria");
-            for (var i = 0; i < result.length; i++) {
-                options.append($("<option />").val(result[i].CD_MUNICIPIO).text(result[i].NM_MUNICIPIO));
-            }
+    // function loadCidades()
+    // {
+    //     $.getJSON("/portal/EncontreUmaPJ/PesquisarCidades", function (result) {
+    //         var options = $("#cidade-promotoria");
+    //         for (var i = 0; i < result.length; i++) {
+    //             options.append($("<option />").val(result[i].CD_MUNICIPIO).text(result[i].NM_MUNICIPIO));
+    //         }
 
-            options.change(function () {
-                $('#hidCdCidade').val(this.value);
+    //         options.change(function () {
+    //             $('#hidCdCidade').val(this.value);
 
-                if (!isMobile || !isHome){
-                    carregando(true);
-                    LoadMarkers();
-                }
-            });
+    //             if (!isMobile || !isHome){
+    //                 carregando(true);
+    //                 LoadMarkers();
+    //             }
+    //         });
 
-            loadAtribuicoes(); //then loadPromotores();
-        });
-    }
+    //         loadAtribuicoes(); //then loadPromotores();
+    //     });
+    // }
 
     function loadAtribuicoes() {
         $.getJSON("/portal/EncontreUmaPJ/PesquisarAtribuicoes", function (result) {
